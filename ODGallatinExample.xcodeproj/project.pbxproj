@@ -13,9 +13,12 @@
 		7C2E51201D2EFE5A00A87B60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E511E1D2EFE5A00A87B60 /* Main.storyboard */; };
 		7C2E51221D2EFE5A00A87B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E51211D2EFE5A00A87B60 /* Assets.xcassets */; };
 		7C2E51251D2EFE5A00A87B60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C2E51231D2EFE5A00A87B60 /* LaunchScreen.storyboard */; };
+		7C2E51341D2F081000A87B60 /* GallatinServiceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2E51331D2F081000A87B60 /* GallatinServiceInfo.m */; };
+		F55C1ED70FCF5E3A2F861CA3 /* libPods-ODGallatinExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C75936ABF539A91A8495E04B /* libPods-ODGallatinExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39229D09B165B574EF23A408 /* Pods-ODGallatinExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODGallatinExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ODGallatinExample/Pods-ODGallatinExample.debug.xcconfig"; sourceTree = "<group>"; };
 		7C2E51121D2EFE5A00A87B60 /* ODGallatinExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODGallatinExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2E51161D2EFE5A00A87B60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C2E51181D2EFE5A00A87B60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,10 @@
 		7C2E51211D2EFE5A00A87B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C2E51241D2EFE5A00A87B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C2E51261D2EFE5A00A87B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C2E51321D2F081000A87B60 /* GallatinServiceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GallatinServiceInfo.h; sourceTree = "<group>"; };
+		7C2E51331D2F081000A87B60 /* GallatinServiceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GallatinServiceInfo.m; sourceTree = "<group>"; };
+		C75936ABF539A91A8495E04B /* libPods-ODGallatinExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ODGallatinExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A98296C037F16EC13AAB08 /* Pods-ODGallatinExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODGallatinExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ODGallatinExample/Pods-ODGallatinExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55C1ED70FCF5E3A2F861CA3 /* libPods-ODGallatinExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A75327357C8667838D99B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C75936ABF539A91A8495E04B /* libPods-ODGallatinExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C2E51091D2EFE5A00A87B60 = {
 			isa = PBXGroup;
 			children = (
 				7C2E51141D2EFE5A00A87B60 /* ODGallatinExample */,
 				7C2E51131D2EFE5A00A87B60 /* Products */,
+				BD588997B8B80CC839375F63 /* Pods */,
+				4A75327357C8667838D99B04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +85,8 @@
 				7C2E51231D2EFE5A00A87B60 /* LaunchScreen.storyboard */,
 				7C2E51261D2EFE5A00A87B60 /* Info.plist */,
 				7C2E51151D2EFE5A00A87B60 /* Supporting Files */,
+				7C2E51321D2F081000A87B60 /* GallatinServiceInfo.h */,
+				7C2E51331D2F081000A87B60 /* GallatinServiceInfo.m */,
 			);
 			path = ODGallatinExample;
 			sourceTree = "<group>";
@@ -79,6 +99,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BD588997B8B80CC839375F63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39229D09B165B574EF23A408 /* Pods-ODGallatinExample.debug.xcconfig */,
+				F9A98296C037F16EC13AAB08 /* Pods-ODGallatinExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C2E51291D2EFE5A00A87B60 /* Build configuration list for PBXNativeTarget "ODGallatinExample" */;
 			buildPhases = (
+				04A564879B48F2793FD30FD1 /* [CP] Check Pods Manifest.lock */,
 				7C2E510E1D2EFE5A00A87B60 /* Sources */,
 				7C2E510F1D2EFE5A00A87B60 /* Frameworks */,
 				7C2E51101D2EFE5A00A87B60 /* Resources */,
+				4739CFFC6A12EAEB7A512B4D /* [CP] Embed Pods Frameworks */,
+				37A5055132C6265BD69F8B2D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,11 +177,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04A564879B48F2793FD30FD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		37A5055132C6265BD69F8B2D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ODGallatinExample/Pods-ODGallatinExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4739CFFC6A12EAEB7A512B4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ODGallatinExample/Pods-ODGallatinExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C2E510E1D2EFE5A00A87B60 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C2E51341D2F081000A87B60 /* GallatinServiceInfo.m in Sources */,
 				7C2E511D1D2EFE5A00A87B60 /* ViewController.m in Sources */,
 				7C2E511A1D2EFE5A00A87B60 /* AppDelegate.m in Sources */,
 				7C2E51171D2EFE5A00A87B60 /* main.m in Sources */,
@@ -264,6 +345,7 @@
 		};
 		7C2E512A1D2EFE5A00A87B60 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39229D09B165B574EF23A408 /* Pods-ODGallatinExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ODGallatinExample/Info.plist;
@@ -275,6 +357,7 @@
 		};
 		7C2E512B1D2EFE5A00A87B60 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A98296C037F16EC13AAB08 /* Pods-ODGallatinExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ODGallatinExample/Info.plist;
@@ -303,6 +386,7 @@
 				7C2E512B1D2EFE5A00A87B60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
